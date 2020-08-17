@@ -1,3 +1,3 @@
-In this project, I will deconstruct an existing webpage and then rebuild it. 
+Reconstrution of the Google homepage using HTML and CSS
 
-Completing this project demonstrates that I understand how elements get placed on the page and how they get styled and aligned.
+Demonstrates the understanding of how elements get placed on the page and how they get styled and aligned.
