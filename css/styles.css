@@ -1,0 +1,169 @@
+html{
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font: 13px Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global */
+.container {
+    margin: auto;
+    text-align: center;
+}
+
+/*Header*/
+#navbar{
+    display: grid;
+    grid-template-columns: repeat(2, 50px) 1fr repeat(3, 50px) 80px;
+    grid-template-rows: 50px;
+    grid-template-areas: "about store . gmail images menu signin_button";
+    margin: 0 2em;
+}
+
+#about{
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
+
+#store{
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
+
+#gmail{
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+
+#images{
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+
+#menu{
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+    margin-top: 5px;
+}
+
+#signin_button{
+    grid-area: signin_button;
+    justify-self: center;
+    align-self: center;
+    color: #fff;
+    background-color: #4285f4;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+header a{
+    text-decoration: none;
+    color: #000000;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+header img:hover{
+    filter: brightness(0%);
+}
+
+#signin_button:hover{
+    cursor: default;
+    text-decoration: none;
+}
+
+/*Search*/
+section img{
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#search_form [type="text"]{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 540px;
+    height: 38px;
+    border-radius: 20px;
+    border-width: thin;
+    border-color: rgba(169, 169, 169, 0.25);
+    outline: none;
+}
+
+#search_form [type="text"]:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+#search_form button{
+    color: #696969;
+    border: 1px solid #fff;
+}
+
+#search_form button:hover{
+    color: #696969;
+    border: 1px solid #5F6368;
+    cursor: pointer;
+}
+
+.button_1{
+    border: 0;
+    padding: 11px 18px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+/*Footer*/
+#footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    border-top: 1px solid #d2d2d2;
+}
+
+footer a{
+    text-decoration: none;
+    color: #5f6368;
+}
+
+#footer-left{
+    display: grid;
+    grid-template-columns: 90px 90px 120px;
+    grid-template-rows: 50px;
+    padding-left: 1em;
+    text-align: left;
+}
+
+#footer-right{
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: 50px;
+    padding-right: 2em;
+}
+
+#footer-left a, #footer-right a{
+    justify-self: center;
+    align-self: center;
+}
+
+#footer-left a:hover, #footer-right a:hover{
+    text-decoration: underline;
+}
